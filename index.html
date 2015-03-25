@@ -7,6 +7,7 @@
 <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 <link rel="import" href="bower_components/core-icons/core-icons.html">
+<link rel="import" href="bower_components/paper-elements/paper-elements.html">
 
 <style>
 	core-toolbar {
@@ -17,6 +18,24 @@
 		color: blue;
 		height: 50px;
 	}
+	.example {
+		background: #333;
+		padding: 10px;
+		height: 300px;
+	}
+	.example > div {
+		background: #EEE;
+		margin: 10px;
+		height: 300px;
+	}
+	paper-button {
+		background: blue;
+		color: #FFF ;
+	}
+	paper-button::shadow #ripple {
+		color: black;
+	}
+
 </style>
 </head>
 
@@ -28,10 +47,19 @@
   				Hello
   			</div>
   		</core-toolbar>
-
 	  	<core-icon icon="polymer"></core-icon>
 	  	<core-icon icon="android"></core-icon>
 
+	  	<div class="example" layout vertical>
+	  		<div flex>One</div>	
+	  		<div flex>Two</div>
+	  		<div flex>Three</div>
+	  		<div flex>Four</div>
+	  	</div>
+	  	<paper-checkbox></paper-checkbox>
+	  	<paper-button raised>Button 1</paper-button>
+
   	</core-header-panel>
+
   </body>
 </html>
