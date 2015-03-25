@@ -1,6 +1,6 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 
-<polymer-element name="hello-world" noscript>
+<polymer-element name="hello-world" attributes="name">
 	<template>
 		<style type="text/css">
   		h1 {
@@ -9,7 +9,12 @@
   			color:green;
   		}
 	  	</style>
-	
-		<h1>Hello world</h1>
+		<h1>Hello {{name}}</h1>
 	</template>
+
+	<script>
+		 Polymer({
+		 	name:'World'
+		 })
+	</script>
 </polymer-element>
