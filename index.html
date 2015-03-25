@@ -4,7 +4,7 @@
 
 <title>AskMeWhy</title>
 <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-<link rel="import" href="elements/hello-world.html">
+<link rel="import" href="bower_components/core-tooltip/core-tooltip.html">
 <style>
 
 	h1 {
@@ -13,7 +13,8 @@
 </style>
 </head>
   <body>
-  	<hello-world name='Santa'></hello-world>
-  	<hello-world name='Santa'></hello-world>
+  	<core-tooltip label="I'm a tooltip">
+  		<span>Hover over me.</span>
+	</core-tooltip>
   </body>
 </html>
