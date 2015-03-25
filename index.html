@@ -29,11 +29,17 @@
 		height: 300px;
 	}
 	paper-button {
-		background: blue;
+		background: #CDDC39;
 		color: #FFF ;
 	}
 	paper-button::shadow #ripple {
 		color: black;
+	}
+	paper-tabs {
+		background: #03A9F4
+	}
+	paper-tabs::shadow #selectionBar {
+  		background-color: #ff4081;
 	}
 
 </style>
@@ -56,8 +62,15 @@
 	  		<div flex>Three</div>
 	  		<div flex>Four</div>
 	  	</div>
+
 	  	<paper-checkbox></paper-checkbox>
 	  	<paper-button raised>Button 1</paper-button>
+	  	
+	  	<paper-tabs selected="0">
+			<paper-tab>TAB 1</paper-tab>
+			<paper-tab>TAB 2</paper-tab>
+			<paper-tab>TAB 3</paper-tab>
+		</paper-tabs>
 
   	</core-header-panel>
 
