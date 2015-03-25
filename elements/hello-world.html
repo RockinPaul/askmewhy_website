@@ -13,8 +13,10 @@
 	</template>
 
 	<script>
-		 Polymer({
-		 	name:'World'
+		 Polymer('hello-world', {
+		 	ready: function() {
+		 		this.name ='World';
+		 	}
 		 })
 	</script>
 </polymer-element>
